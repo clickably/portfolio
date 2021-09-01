@@ -8,12 +8,13 @@
     "url": "git+https://github.com/iryna-targetologist/portfolio.git"
   },
   "scripts": {
-    "start": "npx browser-sync start --server ./src --watch"
+    "start": "npx browser-sync start --server ./src --watch",
+    "build": "npx sass src/assets/sass:src/assets/css"
   },
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "prettier": "^2.3.2",
-    "saas": "^1.0.0"
+    "sass": "^1.38.2"
   },
   "bugs": {
     "url": "https://github.com/iryna-targetologist/portfolio/issues"

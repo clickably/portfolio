@@ -65,6 +65,7 @@
     // Intro.
     &.intro {
       > header {
+
         // Hack: Chrome's grid implementation screws up absolute element placement within a static child element.
 
         // Set width on all child elements and right-align.
