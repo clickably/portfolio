@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iryna-targetologist/portfolio.git"
+  },
+  "scripts": {
+    "start": "npx browser-sync start --server ./src --watch"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "prettier": "^2.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/iryna-targetologist/portfolio/issues"
+  },
+  "homepage": "https://github.com/iryna-targetologist/portfolio#readme",
+  "license": "ISC"
+}
