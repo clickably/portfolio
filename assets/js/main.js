@@ -168,4 +168,12 @@
         $modal.addClass("loaded");
       }, 275);
     });
+
+  // accordion
+  $('.accordion .toggle').on('click', function (event) {
+    event.stopPropagation();
+
+    var current = $(event.target).parent('li');
+    current.toggleClass('active');
+  });
 })(jQuery);

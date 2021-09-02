@@ -8,8 +8,9 @@
     "url": "git+https://github.com/iryna-targetologist/portfolio.git"
   },
   "scripts": {
-    "start": "npx browser-sync start --server ./src --watch",
-    "build": "npx sass src/assets/sass:src/assets/css"
+    "start": "npm run build & npm run sync && fg",
+    "sync": "npx browser-sync start --server ./ --watch",
+    "build": "npx sass --watch assets/sass:assets/css"
   },
   "devDependencies": {
     "browser-sync": "^2.27.5",

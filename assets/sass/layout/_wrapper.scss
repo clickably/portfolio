@@ -15,7 +15,8 @@
 
     > header {
       padding: 0 ($pad * 2) 0 ($pad);
-      width: _size(header-width) + ($pad * 2);
+      // comment original
+      // width: _size(header-width) + ($pad * 2);
     }
 
     > .content {
@@ -396,6 +397,12 @@
         overflow-x: hidden;
       }
 
+      &.intro {
+        > .content {
+          height: 80vh;
+        }
+      }
+
       > footer {
         padding: 0;
         text-align: left;
@@ -421,7 +428,9 @@
         background-size: 40rem auto;
 
         > * {
-          max-width: 25rem;
+          // comment original
+          //max-width: 25rem;
+          max-width: none;
         }
 
         > :last-child {

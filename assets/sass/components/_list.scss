@@ -19,7 +19,7 @@ ol {
 ul {
   list-style: disc;
   margin: 0 0 _size(element-margin) 0;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
 
   li {
     padding-left: 0.325rem;
@@ -42,6 +42,53 @@ ul {
         padding-bottom: 0;
       }
     }
+  }
+
+  &.accordion {
+    > li {
+      cursor: pointer;
+      padding-bottom: 0;
+
+      .toggle {
+        position: relative;
+        margin: 0;
+        padding: 0 0 1.5rem;
+      }
+
+      .toggle:before {
+        content: '+';
+        font-size: 2rem;
+        font-family: _font(family);
+        position: absolute;
+        top: -1rem;
+        left: -2rem;
+        transition: transform 0.3s cubic-bezier(.36, .07, .19, .97);
+      }
+
+      > ul {
+        max-height: 0;
+        margin: 0;
+        overflow: hidden;
+        cursor: auto;
+        transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+      }
+
+      &.active {
+        > ul {
+          max-height: 500px;
+          padding-bottom: 1.5rem;
+        }
+
+        > .toggle:hover:before {
+          transform: rotateZ(45deg);
+        }
+      }
+    }
+  }
+
+  &.alt.accordion {
+    border-top: 0;
+    border-bottom: solid 1px _palette(border);
   }
 
   &.items {
